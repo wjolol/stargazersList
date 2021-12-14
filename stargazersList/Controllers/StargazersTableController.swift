@@ -9,11 +9,14 @@ import UIKit
 
 class StargazersTableController: UIViewController {
     
+    //MARK: - Variables
     var stargazersList: [String]?
     
+    //MARK: - Controller lifecycle
     override func viewDidLoad() { }
 }
 
+//MARK: - implementing UITableViewDelegate, UITableViewDataSource methods
 extension StargazersTableController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
