@@ -1,0 +1,16 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-ios14.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name cleafychallenge
+import Foundation
+import Swift
+import UIKit
+@_exported import cleafychallenge
+public enum StartResult {
+  case ok([Swift.String]?)
+  case failure(Swift.String?)
+}
+public class CheckDevice {
+  public init()
+  public func start(owner: Swift.String, repoName: Swift.String, completion: @escaping (cleafychallenge.StartResult) -> Swift.Void)
+  @objc deinit
+}

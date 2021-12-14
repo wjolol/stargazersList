@@ -1,0 +1,11 @@
+framework module cleafychallenge {
+  umbrella header "cleafychallenge.h"
+
+  export *
+  module * { export * }
+}
+
+module cleafychallenge.Swift {
+    header "cleafychallenge-Swift.h"
+    requires objc
+}
